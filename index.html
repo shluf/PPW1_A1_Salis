@@ -1,45 +1,97 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body style="height:100vh; display: flex; flex-direction:column; justify-content:space-around; align-items:center">
-    <header>
-        <a href="index.html">link</a>
-    </header>
+<!-- 
+    Nama    : Salis Haidar Luthfi
+    NIM     : 23/513525/SV/22227
+ -->
 
-
-    <frameset rows="50%,50%" >
-        <iframe noresize="true" src="index.html"></iframe>
-    </frameset>
-    
-    <main>
-        <section>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit esse cillum dolore eu fugiat nullapariatur. Excepteur sint occaecat cupidatat non proident, sunt inculpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit esse cillum dolore eu fugiat nullapariatur. Excepteur sint occaecat cupidatat non proident, sunt inculpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit esse cillum dolore eu fugiat nullapariatur. Excepteur sint occaecat cupidatat non proident, sunt inculpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et </p>
-        </section>
-    </main>
-
-
-    <table border="2">
-        
-        <tr>
-            <th>nomor</th>
-            <th rowspan="2"></th>
-            <th>nomor</th>
-        </tr>
-        <tr>
-            <td bgcolor="red">500</td>
-            <td>700</td>
-        </tr>
-        <tr>
-            <td>100</td>
-            <td>200</td>
-            <td>300</td>
-        </tr>
-    </table>
-</body>
-</html>
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- 
+     Tag <title> untuk menambahkan Judul Web 
+ -->
+     <title>PPW2 | Salis Haidar</title>
+ </head>
+ 
+ <!-- 
+     Disini saya menambahkan inline CSS untuk mengatur layout dan tampilan web
+ -->
+ <body style="margin: 0; min-height: 100vh; display: flex; flex-direction: column;">
+ <!-- 
+     Header digunakan untuk judul atau bagian atas dari dokumen atau section. 
+     Di sini, saya menggunakan format h1 untuk teksnya.
+  -->
+     <header style="background-color: #E98A8A; text-align: center; padding: 20px;">
+         <h1 style="color: white; margin: 0;">Praktikum Pemrograman Web</h1>
+     </header>
+ 
+ <!-- 
+     Nav digunakan sebagai kontainer untuk navigasi web yang dapat digunakan untuk mengakses konten lain. 
+     Di sini, saya menambahkan tag <a> untuk menghubungkan halaman ini ke laman artikel.html
+  -->
+     <nav style="background-color: gray; text-align: center; padding: 5px;">
+         <a href="artikel.html" style="color: white; margin: 0;">ARTIKEL</a>
+     </nav>
+ 
+ <!-- 
+     Main berisi konten utama dari halaman web ini 
+  -->
+     <main style="display: flex; flex: 1;">
+ <!-- 
+     Section digunakan untuk membagi halaman menjadi bagian atau "section".
+  -->
+         <section style="flex: 3; padding: 20px;">
+ <!-- 
+     Article digunakan untuk menandai konten yang independen atau dapat berdiri sendir, seperti entri blog, komentar, atau artikel.
+     Untuk artikel pertama saya menggunakan tag <iframe> untuk menampilken artikel dari dokumen artikel.html
+     selain itu, saya menggunakan tag <h4> untuk judul dan <p> untuk isi
+  -->
+             <article> 
+                 <iframe src="artikel.html" frameborder="0" style="width: 100%; height: 50vh;"></iframe>
+             </article>
+                     <h2>Artikel Lainnya</h2>
+                         <article>
+                                 <h4 style="display: block; font-size: 1.4em; color: #E98A8A; margin: 0;">Artikel 1</h4>
+                                 <p style="display: block; font-size: 0.8em; color: gray;">Ringkasan</p>
+                         </article>
+                         <article>
+                                 <h4 style="display: block; font-size: 1.4em; color: #E98A8A; margin: 0;">Artikel 2</h4>
+                                 <p style="display: block; font-size: 0.8em; color: gray;">Ringkasan</p>  
+                         </article>
+         </section>
+ 
+ <!-- 
+     Aside digunakan untuk menyertakan konten yang terkait tetapi bukan bagian utama dari dokumen.
+  -->
+         <aside style="flex: 1; padding: 20px;">
+             <h2>Profil</h2>
+             <p>Berikut merupakan tabel data diri saya.</p>
+ 
+             <!-- Saya menggunakan tag <iframe> untuk menampilkan tugas membuat tabel pada file tabel.html -->
+             <iframe width="300" height="100" frameborder="0" src="tabel.html"></iframe>
+             
+             <!-- Disini saya menambahkan list agar dapat mengakses file html lain dengan tag <a> -->
+             <h2>Sumber</h2>
+             <ul style="list-style-type: none; margin: 0; padding: 0;">
+                 <li style="margin-bottom: 10px;">
+                     <a href="artikel.html" target="_blank" style="color: #E98A8A; text-decoration: none;">Lihat Artikel di Tab Baru</a>
+                 </li>
+                 <li style="margin-bottom: 10px;">
+                     <a href="tabel.html" style="color: #E98A8A; text-decoration: none;">Lihat Tabel</a>
+                 </li>
+             </ul>
+         </aside>
+ 
+     </main>
+ 
+ <!-- 
+     Footer digunakan untuk menyertakan bagian bawah halaman atau footer.
+  -->
+     <footer style="background-color: #E98A8A; text-align: center; padding: 10px;">
+         <p style="color: white; margin: 0;">&copy; 2024 Salis Haidar</p>
+     </footer>
+ </body>
+ </html>
+ 
