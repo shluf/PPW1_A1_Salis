@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Output</title>
+</head>
+
+<body>
+
+    <form>
+        <fieldset>
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama"><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Pilihan</legend>
+            <input type="checkbox" id="pilihan1" name="pilihan1">
+            <label for="pilihan1">Pilihan 1</label><br>
+
+            <input type="checkbox" id="pilihan2" name="pilihan2">
+            <label for="pilihan2">Pilihan 2</label><br>
+        </fieldset>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <label for="buah">Pilih Buah:</label>
+    <input list="daftarBuah" id="buah" name="buah" placeholder="Masukkan buah">
+
+    <datalist id="daftarBuah">
+        <option value="Apel">
+        <option value="Jeruk">
+        <option value="Mangga">
+        <option value="Anggur">
+        <option value="Pisang">
+    </datalist>
+    <br>
+    <br>
+
+    <form oninput=" result.value=parseInt(a.value)+parseInt(b.value);
+                    aValue.value=parseInt(a.value);
+                    bValue.value=parseInt(b.value);
+                    ">
+        <label for="a">Nilai A:</label>
+        <input type="range" id="a" name="a" value="25"> <output name="aValue">25</output><br>
+
+        <label for="b">Nilai B:</label>
+        <input type="range" id="b" name="b" value="50"> <output name="bValue">50</output><br>
+
+        <output name="result" for="a b">100</output>
+    </form>
+
+    <label for="hobi">Pilih Hobi:</label>
+    <select id="hobi" name="hobi">
+        <optgroup label="Olahraga">
+            <option value="sepakbola">Sepak Bola</option>
+            <option value="basket">Basket</option>
+        </optgroup>
+        <optgroup label="Seni">
+            <option value="melukis">Melukis</option>
+            <option value="menyanyi">Menyanyi</option>
+        </optgroup>
+    </select>
+
+    <input type="text" disabled>
+    <button disabled>Submit</button>
+    <input type="text" readonly value="Hanya baca"><br><br>
+
+    <textarea disabled>Teks ini disabled</textarea>
+    <textarea readonly>Teks ini readonly dan teks ini tidak dapat diubah.</textarea>
+
+    <br><br><br>
+
+
+    <input type="text" />
+    <br><br>
+    <input type="radio" />
+    <br><br>
+    <input type="range" />
+    <br><br>
+    <input type="time" />
+    <br><br>
+    <input type="image" src="icon.png" />
+    <br><br>
+    <input type="datetime-local" />
+    <br><br>
+    <input type="color" />
+    <br><br>
+    <input type="button" value="Button" />
+    <br><br>
+    <input type="checkbox" />
+    <br><br>
+    <input type="file" />
+    <br><br>
+
+
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname">
+    </form>
+
+    <br><br>
+
+    <label for="cars">Choose a car:</label>
+    <select id="cars" name="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+    </select>
+
+    <br><br>
+
+    <form>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label>
+    </form>
+
+    <a href="other.html" target="_blank">Link</a>
+
+    <textarea name="message" rows="10" cols="30">
+        The cat was playing in the garden.
+    </textarea>
+
+    <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+
+    <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- <form action="/action_page.php" method="get"> -->
+    <form action="/action_page.php" method="post">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John" readonly><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe">
+    </form>
+
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John" disabled><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe">
+    </form>
+
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" size="50"><br>
+        <label for="pin">PIN:</label><br>
+        <input type="text" id="pin" name="pin" size="4">
+    </form>
+
+    <form>
+        <label for="phone">Enter a phone number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+    </form>
+
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <input type="submit">
+    </form>
+
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" autofocus><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname">
+    </form>
+
+    <form action="/action_page.php">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit" value="Submit">
+        <input type="submit" formaction="/action_page2.php" value="Submit as Admin">
+    </form>
+
+    <form action="/action_page_binary.asp" method="post">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <input type="submit" value="Submit">
+        <input type="submit" formenctype="multipart/form-data" value="Submit as Multipart/form-data">
+    </form>
+
+    <form action="/action_page.php" method="get">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit" value="Submit using GET">
+        <input type="submit" formmethod="post" value="Submit using POST">
+    </form>
+
+    <br><br>
+    <svg width="200" height="200">
+        <rect width="200" height="200" style="fill:white;stroke-width:10;stroke:blue" />
+    </svg>
+
+    <canvas id="myCanvas" width="400" height="200"></canvas>
+    
+    <script>
+        var c= document.getElementById("myCanvas");
+        var ctx= c.getContext("2d")
+        
+        ctx.moveTo(0,0)
+        ctx.lineTo(200,100)
+
+        ctx.stroke()
+        
+        ctx.font = "30px JetBrainsMono"
+        ctx.fillText("Helo",220,150)
+    </script>
+
+</body>
+
+</html>

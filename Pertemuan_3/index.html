@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.png" type="image/png">
+    <title>TOPUPIN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img width="80px" height="80px" src="icon.png">
+            <div>
+                <h1>TOPUPIN</h1>
+                <h3>Top up Games Mudah dan Murah</h3>
+            </div>
+        </header>
+        <hr>
+        <form oninput="rangeDM()">
+            <label for="gameName">Nama Game *</label>
+            <input type="text" id="gameName" name="gameName" placeholder="Mobile Legends: Bang Bang" disabled />
+
+            <label for="gameID">Masukkan User ID</p>
+                <input type="text" id="gameID" name="userID" placeholder="User ID" required />
+                <input type="text" id="gameID" name="serverID" placeholder="Server ID" required />
+
+
+            <p>Pilih Kategori Top up *</p>
+            <input type="radio" id="diamond" name="topup_category" value="Diamond">
+            <label for="diamond">Diamond</label>
+            <input type="radio" id="weeklyPass" name="topup_category" value="weeklyPass">
+            <label for="weeklyPass">Weekly Pass</label>
+            <input type="radio" id="twilightPass" name="topup_category" value="twilightPass">
+            <label for="twilightPass">Twilight Pass</label><br>
+
+            <div id="contDiamond">
+                <label for="diamondsValue" id="diamondsTitle"><b>Nominal Diamond</b></label>
+                <input type="number" id="diamondsValue" name="diamondsValue" value="0" />
+
+                </div>
+            <div id="price"><span>Total Pembayaran :</span><output name="price" for="diamond">0</output></div>
+
+
+            <label for="paymentMethod">Metode Pembayaran *</label>
+            <select id="paymentMethod" name="paymentMethod" required>
+                <option value="dana">Dana</option>
+                <option value="ovo">OVO</option>
+                <option value="gopay">GOPAY</option>
+                <option value="sopheepay">ShopeePay</option>
+            </select>
+
+            <label for="cardNumber">Nomor Rekening *</label>
+            <input type="text" id="cardNumber" name="cardNumber" placeholder="Masukkan Nomor Rekening" required />
+
+            <label for="date">Tanggal Pembayaran *</label>
+            <input type="date" id="date" name="date" required />
+
+            <label for="transferFile">Bukti Transfer</label>
+            <input type="file" id="transferFile" name="transferFile" required />
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        const a = document.getElementsByName('diamondsValue')[0];
+        const price = document.getElementsByName('price')[0];
+        const rangeDM = () => {
+            price.value = a.value * 1200 / 2
+        }
+    </script>
+</body>
+
+</html>
