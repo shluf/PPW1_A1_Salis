@@ -1,7 +1,7 @@
 :root {
     --bs-link-color: #c2506e;
     --bs-link-hover-color: #c2506e;
-    --bs-font-sans-serif: "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-sans-serif: "Helvetica Neue";
   }
 
   .nav-pills {
@@ -25,6 +25,12 @@ navbar {
     height: 100vh;
     margin-left: 12px;
     width: 72px;
+}
+
+h3 {
+    color: #c2506e;
+    font-weight: bold;
+    margin-top: 1rem;
 }
 
 textarea {
@@ -73,7 +79,7 @@ li.profile-status {
 
 i.status-icon {
     border-radius: 50%;
-    font-size: 60px;
+    font-size: 4rem;
     color: #c2506e;
 }
 
@@ -83,14 +89,15 @@ i.status-icon {
     justify-content: space-between;
     align-items: center;
     margin-left: 12px;
+    padding-right: 12px;
 }
 
 .content {
-    margin: 12px;
+    margin: 0.5rem;
     max-width: 600px;
     min-width: 600px;
     background-color: #fff;
-    padding: 12px;
+    padding: 1.2rem;
     border-radius: 12px;
 }
 
@@ -120,6 +127,7 @@ i.status-icon {
 
 .feed-title {
     color: #c2506e;
+    font-weight: bold;
 }
 
 .content-body img {
@@ -157,6 +165,9 @@ aside {
     justify-content: space-between;
     padding-left: 12px;
     padding-right: 12px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-left: 3px solid #c2506e;
 }
 
 .profile-info p {
@@ -165,6 +176,10 @@ aside {
 
 .main-profile i {
     font-size: 3rem;
+}
+
+.main-profile-name {
+    font-weight: bold;
 }
 
 .list-group {
