@@ -1,0 +1,1 @@
+console.log("Pesan ini ditampilkan melalui JavaScript eksternal.");
