@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan 2</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h2>Data Praktikan PPW1</h2>
+    <div id="data-praktikan"></div>
+  </div>
+
+  <script>
+    let isPraktikan = confirm("Apakah Anda praktikan PPW1?");
+    if (isPraktikan) {
+      let nama = prompt("Masukkan nama Anda:");
+      let nim = prompt("Masukkan NIM Anda:");
+      let angkatan = prompt("Masukkan angkatan Anda:");
+
+      let dataPraktikan = `
+        <table class="table">
+          <tr>
+            <th>Nama</th>
+            <th>NIM</th>
+            <th>Angkatan</th>
+          </tr>
+          <tr>
+            <td>${nama}</td>
+            <td>${nim}</td>
+            <td>${angkatan}</td>
+          </tr>
+        </table>
+      `;
+
+      document.getElementById("data-praktikan").innerHTML = dataPraktikan;
+    } else {
+      document.getElementById("data-praktikan").innerHTML = "<p>Anda bukan praktikan PPW1, Anda tidak boleh masuk!</p>";
+    }
+  </script>
+</body>
+</html>
